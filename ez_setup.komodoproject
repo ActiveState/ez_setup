@@ -2,6 +2,9 @@
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="8cca426b-27b6-4c35-8ec1-3dba302d937e" kpf_version="5" name="ez_setup.komodoproject">
 <preference-set idref="8cca426b-27b6-4c35-8ec1-3dba302d937e">
+  <string relative="path" id="import_dirname"></string>
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;_svn;.git;.hg;.bzr;*%*;tmp*.html;.DS_Store;*.swp;*.kpf;*.komodoproject;.komodotools;dist;*.egg-info;.gitignore</string>
+  <string id="import_include_matches"></string>
   <boolean id="import_live">1</boolean>
 </preference-set>
 </project>
