@@ -21,14 +21,14 @@ setup(name='ez_setup',
     long_description=README + '\n\n' + NEWS,
     classifiers=[
       # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      'Programming Language :: Python :: 3',
     ],
     keywords='ez_setup setuptools distribute workaround',
     author='Sridhar Ratnakumar',
     author_email='github@srid.name',
     url='http://github.com/ActiveState/ez_setup',
     license='MIT',
-    packages=find_packages('src'),
-    package_dir = {'': 'src'},include_package_data=True,
+    py_modules = ['ez_setup', 'distribute_setup'],
     zip_safe=False,
     install_requires=install_requires,
     entry_points={

@@ -1,15 +1,19 @@
-This file requires editing
-==========================
+ez_setup
+========
 
-Note to the author: Please add something informative to this README *before*
-releasing your software, as `a little documentation goes a long way`_.  Both
-README.rst (this file) and NEWS.txt (release notes) will be included in your
-package metadata which gets displayed in the PyPI page for your project.
+**Problem**: ``setup.py`` of several Python projects blindly import the
+setutools bootstrap module ``ez_setup.py`` without realizing that it is usually
+not installed in the user's machine.
+`This causes much trouble <http://www.google.ca/search?sourceid=chrome&ie=UTF-8&q=%22ImportError:+No+module+named+ez_setup%22&qscrl=1>`.
 
-You can take a look at the README.txt of other projects, such as repoze.bfg
-(http://bfg.repoze.org/trac/browser/trunk/README.txt) for some ideas.
+**Workaround**: Include ``ez_setup.py`` (and ``distribute_setup.py``) as a
+install-eable Python package so users can do
+"easy_install ez_setup troublesome_package" as a workaround.
 
-.. _`a little documentation goes a long way`: http://www.martinaspeli.net/articles/a-little-documentation-goes-a-long-way
+**Note**: The ``ez_setup.py`` distributed is simply a copy of
+``distribute_setup.py`` from the Distribute project (a setuptools fork); this is
+to remain compatible with several Python distributors opting to use Distribute
+instead of Setuptools -- examples: Debian, ActiveState, and so on.
 
 Credits
 -------
