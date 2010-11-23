@@ -4,9 +4,9 @@ ez_setup
 **Problem**: ``setup.py`` of several Python projects blindly import the
 setuptools bootstrap module ``ez_setup.py`` without realizing that it is usually
 not installed in the user's machine.
-`This causes much trouble <http://www.google.ca/search?sourceid=chrome&ie=UTF-8&q=%22ImportError:+No+module+named+ez_setup%22&qscrl=1>`_.
+`This causes much trouble <http://www.google.ca/search?ie=UTF-8&q=%22ImportError:+No+module+named+ez_setup%22>`_.
 
-**Workaround**: Include ``ez_setup.py`` (and ``distribute_setup.py``) as a
+**Workaround**: Include ``ez_setup.py`` (and ``distribute_setup.py``) as an
 installable Python package so users can do
 ``easy_install ez_setup troublesome_package`` as a workaround.
 
