@@ -31,8 +31,4 @@ setup(name='ez_setup',
     py_modules = ['ez_setup', 'distribute_setup'],
     zip_safe=False,
     install_requires=install_requires,
-    entry_points={
-        'console_scripts':
-            ['ez_setup=ez_setup:main']
-    }
 )
