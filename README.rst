@@ -2,7 +2,7 @@ ez_setup
 ========
 
 **Problem**: ``setup.py`` of several Python projects blindly import the
-setutools bootstrap module ``ez_setup.py`` without realizing that it is usually
+setuptools bootstrap module ``ez_setup.py`` without realizing that it is usually
 not installed in the user's machine.
 `This causes much trouble <http://www.google.ca/search?sourceid=chrome&ie=UTF-8&q=%22ImportError:+No+module+named+ez_setup%22&qscrl=1>`_.
 
