@@ -9,7 +9,7 @@ News
 1.0dev
 ------
 
-*
+* Match Distribute's license
 
 0.9
 ---
